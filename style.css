@@ -87,3 +87,23 @@ nav ul li {
 nav ul li:last-child {
   border-right: none; /* Supprime la bordure du dernier élément */
 }
+
+/* Styles pour les écrans de moins de 768px de large (petits écrans, téléphones) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .element {
+    width: 100%;
+  }
+}
+
+/* Styles pour les écrans de plus de 768px de large (écrans plus grands, tablettes, ordinateurs) */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+  .element {
+    width: 50%;
+  }
+}
